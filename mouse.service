@@ -1,0 +1,11 @@
+[Unit]
+Description=Mouse thingy
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/Scripts/bluetoothController.py
+WorkingDirectory=/home/pi
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
