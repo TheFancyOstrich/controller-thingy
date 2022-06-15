@@ -43,8 +43,10 @@ void setup() {
 
   //Set pin states
   pinMode(stickClickPin,INPUT_PULLUP);
-  pinMode(buttonClick1Pin,INPUT);
-  pinMode(buttonClick2Pin,INPUT);
+  pinMode(buttonClick1Pin,INPUT_PULLDOWN);
+  pinMode(buttonClick2Pin,INPUT_PULLDOWN);
+  pinMode(buttonClick3Pin,INPUT_PULLDOWN);
+  pinMode(buttonClick4Pin,INPUT_PULLDOWN);
 
   pinMode(ledPin,OUTPUT);
   digitalWrite(ledPin,LOW);
